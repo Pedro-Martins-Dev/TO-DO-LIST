@@ -1,0 +1,103 @@
+body {
+    background-color: #181818;
+    color: #f8f9fa;
+    margin: 0; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh;  
+}
+
+.container-principal 
+{
+    max-width: 800px;  
+}
+
+.cartao {
+    background-color: #222;  
+    border: 1px solid #333;  
+}
+
+.corpo-cartao {
+    padding: 20px; 
+}
+
+h1, h2 {
+    color: #66ffcc; 
+}
+
+.label-formulario {
+    color: #e0b0ff; 
+}
+
+.campo-formulario {
+    background-color: #333; 
+    color: #f8f9fa;  
+    border: 1px solid #555;  
+}
+
+.campo-formulario:focus {
+    background-color: #444;  
+    border-color: #66ffcc;  
+    box-shadow: 0 0 0 0.25rem rgba(102, 255, 204, 0.25); 
+    color: #f8f9fa; 
+}
+
+.seletor-formulario {
+    background-color: #333;  
+    color: #f8f9fa;  
+    border: 1px solid #555;  
+}
+
+.seletor-formulario:focus {
+    background-color: #444; 
+    border-color: #66ffcc;  
+    box-shadow: 0 0 0 0.25rem rgba(102, 255, 204, 0.25);  
+    color: #f8f9fa;  
+}
+
+.input-check-formulario:checked {
+    background-color: #66ffcc; 
+    border-color: #66ffcc;  
+}
+
+.botao-primario {
+    background-color: #66ffcc; 
+    color: #222;  
+}
+
+.botao-primario:hover {
+    background-color: #40c080; 
+    border-color: #40c080; 
+}
+
+.botao-secundario {
+    background-color: #e0b0ff; 
+    border-color: #e0b0ff; 
+    color: #222; 
+}
+
+.botao-secundario:hover {
+    background-color: #c080ff; 
+    border-color: #c080ff; 
+}
+
+#listaTarefas {
+    margin-top: 20px; 
+}
+
+.item-tarefa {
+    background-color: #2a2a2a;  
+    border-left: 5px solid #66ffcc;  
+    padding: 15px;  
+    margin-bottom: 10px; 
+    border-radius: 4px;  
+}
+
+.item-tarefa strong {
+    color: #f8f9fa; 
+}
+
+.texto-desabilitado {
+    color: #aaa !important; 
+}
