@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Criativa Lista de Tarefas</title>
+    <title>Procasti-plano</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/cadastrarTarefa.css">
 </head>
 <body>
     <div class="container-principal mt-5">
-        <h1>I'm doing: A lista de tarefas da sua vida!</h1>
-
+        
+        <div class="d-flex justify-content-between align-items-center mb-3 cabecalho">
+            <img src="img/Gemini_Generated_Image_hqr1zhhqr1zhhqr1-removebg-preview.png" alt="logo" class="logo-img">
+            
+            <div class="botoes-cabecalho">
+                <a href="criarTarefa.html" class="btn btn-primary me-2">Criar Nova Tarefa</a>
+                <a href="index.html" class="btn btn-primary">Voltar</a>
+            </div>
+        </div>
         <div class="cartao shadow-sm mb-3">
             <div class="corpo-cartao">
                 <h2>Adicionar Nova Tarefa</h2>
@@ -46,15 +53,20 @@
                             <label class="form-check-label" for="notificacaoNao">NÃO</label>
                         </div>
                     </div>
-                    <button type="submit" class="botao-primario btn btn-primary">Adicionar Tarefa</button>
-                    <button type="button" class="botao-secundario btn btn-secondary" id="botaoCancelar">Cancelar</button>
 
+                    <div botoes-de-acao-inferiores>
+                            <a href="listarTarefas.html" button type="button" class="botao-secundario btn btn-secondary" id="botaoCancelar""> Visualizar tarefas já cadastrafas</a>
+                            
+                            <button type="submit" class="botao-primario btn btn-primary">Adicionar Tarefa</button>
+
+                            <button type="button" class="botao-secundario btn btn-secondary" id="botaoCancelar">Cancelar</button>
+                        </div>
                 </form>
             </div>
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

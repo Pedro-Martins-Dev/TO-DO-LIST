@@ -1,7 +1,8 @@
-body {
+body 
+{
     background-color: #181818;
     color: #f8f9fa;
-    margin: 0; 
+    margin: 30px; 
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -25,6 +26,7 @@ body {
     text-decoration: none;
     color: #222;
 }
+
 .botao-inicial.criar 
 {
     background-color: #66ffcc;
@@ -34,3 +36,96 @@ body {
     background-color: #e0b0ff;
 }
 
+.container-inicial 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.botao-inicial 
+{
+    margin: 15px;  
+    width: 350px;
+    padding: 20px 40px; 
+    font-size: 1.5em; 
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    text-decoration: none;
+    color: #222;
+    transition: background-color 0.3s ease; 
+}
+
+.fundo-botao
+{
+    width: auto;
+    position: relative;
+    top: 30px;
+    height: 70px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.fundo-botao.criar
+{
+    background-color: #00ac72;
+}
+
+.botao-inicial.criar 
+{
+    background-color: #66ffcc;
+}
+
+.botao-inicial.criar:hover 
+{ 
+    background-color: #e0b0ff;
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.fundo-botao.listar
+{
+    background-color: #7b1abb;
+}
+
+.botao-inicial.listar 
+{
+    background-color: #e0b0ff;
+}
+
+.botao-inicial.listar:hover 
+{ 
+    background-color: #66ffcc;
+}
+
+.botoesDeAcao
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+    gap: 20px;
+    flex-direction: row;
+}
+
+
+.logo-img {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+}
+
+.botoes-cabecalho 
+{
+    display: flex;
+    gap: 300px;
+}
+
+
+.cabecalho {
+    width: 100%;
+    padding: 0 15px;
+    flex-direction: column;
+}

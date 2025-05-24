@@ -5,20 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listar Tarefas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="css/listarTarefas.css">
+    </head>
 <body>
     <div class="container-principal">
-        <h1>I'm doing</h1>
+    
+        <div class="d-flex justify-content-between align-items-center mb-3 cabecalho">
+            <img src="img/Gemini_Generated_Image_hqr1zhhqr1zhhqr1-removebg-preview.png" alt="logo" class="logo-img">
+            
+            <div class="botoes-cabecalho">
+                <a href="criarTarefa.html" class="btn btn-primary me-2">Criar Nova Tarefa</a>
+                <a href="index.html" class="btn btn-primary">Voltar</a>
+            </div>
+        </div>
+
+    </div>
         <div class="cartao shadow-sm">
             <div class="corpo-cartao">
-                <div id="listaTarefas">
+                <div id="listaTarefasContainer">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 15%;" class="text-center">Feita</th>
+                                <th scope="col" style="width: 40%;">Título</th>
+                                <th scope="col" style="width: 15%;">Prioridade</th>
+                                <th scope="col" style="width: 15;">Data de cadastro</th>
+                                <th scope="col" style="width: 15%;">Prev. conclusão</th>
+                                <th scope="col" style="width: 10%;" class="text-center">Ações</th>
+
+                            </tr>
+                        </thead>
+                        <tbody id="listaTarefas">
+                            </tbody>
+                    </table>
                 </div>
-                <p id="mensagemSemTarefas" class="texto-desabilitado text-muted" style="display:none;">Não há tarefas cadastradas</p>
+                <p id="mensagemSemTarefas" class="text-center text-muted mt-3" style="display:none;">Não há tarefas cadastradas.</p>
             </div>
         </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

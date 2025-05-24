@@ -1,0 +1,141 @@
+body {
+    background-color: #121212;
+    color: #e0f7fa;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+}
+
+img
+{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0px;
+    margin-right: 100px;
+    margin-bottom: 20px;;
+}
+
+.container-principal {
+    max-width: 800px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.botao-inicial {
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(135deg, #66ffcc, #9966ff);
+}
+
+.cartao {
+    background: #1e1e2f;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-top: 0px;
+    box-shadow: 0 4px 20px rgba(102, 255, 204, 0.2);
+}
+
+.table 
+{
+width: 100%;
+height: auto;
+border-collapse: separate;
+border-spacing: 3px 2px;
+margin-top: 0px;
+margin-bottom: 20px;
+color: #e0f7fa;
+}
+
+.table th, .table td {
+    background-color: #66ffcca3;
+    padding: 6px 10px; /* Altura reduzida */
+    border: none;
+    border-radius: 5px;
+}
+
+
+.table th {
+    background:  #9966ff;
+    color: #ffffff;
+    font-weight: bold;
+    height: 10px;;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #2a2a3d;
+    gap: 10px;
+}
+
+.tarefa-concluida td {
+    text-decoration: line-through;
+    color: #ffffff;
+}
+
+.item-tarefa {
+    background-color: #2a2a3d;
+    border-left: 5px solid #66ffcc;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-tarefa h6 {
+    color: #e0f7fa;
+    margin-bottom: 5px;
+}
+
+.item-tarefa p {
+    color: #bbb;
+    margin-bottom: 5px;
+}
+
+.item-tarefa strong {
+    color: #66ffcc;
+}
+
+.btn-primary {
+    background:#9966ff;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background: #34cb99;
+}
+
+.text-muted {
+    color: #ffffff !important;
+}
+
+.logo-img {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+}
+
+.botoes-cabecalho 
+{
+    display: flex;
+    gap: 500px;
+}
+
+
+.cabecalho {
+    width: 100%;
+    padding: 0 15px;
+    flex-direction: column;
+}

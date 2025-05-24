@@ -1,4 +1,5 @@
-body {
+body 
+{
     background-color: #181818;
     color: #f8f9fa;
     margin: 0; 
@@ -10,12 +11,14 @@ body {
 
 .container-principal 
 {
+    
     max-width: 800px;  
 }
 
 .cartao {
     background-color: #222;  
     border: 1px solid #333;  
+    border-radius: 10px;
 }
 
 .corpo-cartao {
@@ -100,4 +103,31 @@ h1, h2 {
 
 .texto-desabilitado {
     color: #aaa !important; 
+}
+
+.botoes-de-acao-inferiores
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px; 
+}
+
+
+.logo-img {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+}
+
+.botoes-cabecalho 
+{
+    display: flex;
+    gap: 500px;
+}
+
+
+.cabecalho {
+    width: 100%;
+    padding: 0 15px;
+    flex-direction: column;
 }
