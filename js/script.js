@@ -158,3 +158,26 @@ document.addEventListener('DOMContentLoaded', function() {
         exibirTarefasNaLista();
     }
 });
+
+//filtros
+
+document.getElementById('filtroOrdenacao').addEventListener('change', function () {
+    const criterio = this.value;
+
+    tarefas.sort((a, b) => {
+        switch (criterio) {
+            case 'dataCriacao':
+                return new Date(a.dataCriacaoTarefa.split('/').reverse().join('-')) - new Date(b.dataCriacaoTarefa.split('/').reverse().join('-'));
+            case 'dataTarefa':
+                return new Date(a.dataTarefa) - new Date(b.dataTarefa);
+            case 'prioridade':
+                return a.prioridade.localeCompare(b.prioridade);
+            case 'titulo':
+                return a.titulo.localeCompare(b.titulo);
+            default:
+                return 0;
+        }
+    });
+
+    exibirTarefasNaLista();
+});
