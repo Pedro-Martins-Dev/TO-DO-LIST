@@ -59,6 +59,10 @@ function exibirTarefasNaLista() {
         const celulaTitulo = linhaTarefa.insertCell();
         celulaTitulo.textContent = tarefa.titulo;
 
+        const celulaDescricao = linhaTarefa.insertCell();
+        celulaDescricao.textContent = tarefa.comentario || 'Sem descrição';
+
+
         const celulaPrioridade = linhaTarefa.insertCell();
         celulaPrioridade.textContent = tarefa.prioridade;
 
